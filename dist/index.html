@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="stylesheet" href="/normalize.1114379f.css">
+    <link rel="stylesheet" href="/style.78032849.css">
+    <title>YourMessenger</title>
+<script src="/normalize.1114379f.js"></script><script src="/style.78032849.js"></script></head>
+
+<body>
+
+<template id="template-message">
+    <section class="all-message">
+        <div class="message sent">
+            <p class="user-name">
+                Я:
+            </p>
+            <span>
+                Ваше сообщение
+            </span><br>
+            <p class="time-sent">
+
+            </p>
+        </div>
+    </section>
+</template>
+
+<div class="main-container">
+
+    <div class="header-btn">
+        <button class="settings">
+            Настройки
+        </button>
+        <button class="authorization">
+            Выйти
+        </button>
+    </div>
+
+    <dialog class="popup popup-settings">
+        <div class="popup-header">
+            <p>Настройки</p>
+            <button class="icon-close close-settings">
+                <img src="/close.c9a8b322.svg" alt="Закрыть">
+            </button>
+        </div>
+        <p>Имя в чате</p>
+        <form class="entry nickname-form">
+            <input class="enter-nickname" placeholder="Введите имя">
+            <button class="send-btn">
+                <img src="/send-message.05f18cd6.svg" alt="Отправить">
+            </button>
+        </form>
+    </dialog>
+
+    <dialog class="popup popup-authorization">
+        <div class="popup-header">
+            <p>Авторизация</p>
+            <button class="icon-close close-authorization">
+                <img src="/close.c9a8b322.svg" alt="Закрыть">
+            </button>
+        </div>
+        <div class="email">
+            <p>Почта:</p>
+            <input class="entry-field">
+            <div class="authorization-btn">
+                <button class="code-btn get-code">
+                    Получить код
+                </button>
+                <button class="code-btn enter-code">
+                    Ввести код
+                </button>
+            </div>
+        </div>
+    </dialog>
+
+    <dialog class="popup popup-confirmation">
+        <div class="popup-header">
+            <p>Подтверждение</p>
+            <button class="icon-close close-confirmation">
+                <img src="/close.c9a8b322.svg" alt="Закрыть">
+            </button>
+        </div>
+        <div class="email">
+            <p>Код:</p>
+            <form class="confirmation-code">
+                <input class="entry-field entry-code">
+                <button class="enter-btn">
+                    Войти
+                </button>
+            </form>
+
+        </div>
+    </dialog>
+
+    <div class="messenger">
+
+    </div>
+
+    <form class="entry form-entry">
+        <input class="input-message" type="text" placeholder="сообщение..">
+        <button class="send-btn">
+            <img src="/send-message.05f18cd6.svg" alt="send">
+        </button>
+    </form>
+
+</div>
+
+<script type="module" src="/main.fb6bbcaf.js"></script>
+
+</body>
+</html>
